@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CurrentYear from "@/components/CurrentYear";
 
 const APP_STORE_URL = "#";
 const PLAY_STORE_URL = "#";
@@ -264,8 +265,11 @@ export default function HomePage() {
 
       <footer className="border-t border-[#1E261C] py-10 text-sm text-[#808080]">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 sm:flex-row">
-          <p>© {new Date().getFullYear()} CricketFit. All rights reserved.</p>
-          <p>Built for cricket players worldwide.</p>
+          <p>© <CurrentYear /> CricketFit. All rights reserved.</p>
+          <div className="flex gap-6">
+            <Link href="/legal/privacy" className="hover:text-white">Privacy Policy</Link>
+            <Link href="/legal/terms" className="hover:text-white">Terms &amp; Conditions</Link>
+          </div>
         </div>
       </footer>
     </div>
