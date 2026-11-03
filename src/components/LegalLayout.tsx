@@ -73,6 +73,7 @@ export default function LegalLayout({
         <div className="mx-auto flex max-w-3xl flex-col items-center justify-between gap-3 px-5 sm:flex-row">
           <p>© 2026 CricketFit. All rights reserved.</p>
           <div className="flex gap-6">
+            <Link href="/contact" className="hover:text-white">Contact</Link>
             <Link href="/legal/privacy" className="hover:text-white">Privacy Policy</Link>
             <Link href="/legal/terms" className="hover:text-white">Terms &amp; Conditions</Link>
           </div>
